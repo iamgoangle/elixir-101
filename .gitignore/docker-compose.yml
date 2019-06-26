@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  phoenix:
+    build:
+      context: .
+      dockerfile: Dockerfile.phoenix.development
+    ports:
+      - 4000:4000
+    volumes:
+      - ./my_app:/app
